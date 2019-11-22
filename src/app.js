@@ -25,3 +25,12 @@
 // 3. Recover data entered by the user
 // 4. Send a POST ajax request to the API
 // 5. Refresh cars list
+
+
+import { addCar, fetchAndDisplayCars } from './car';
+import { focusOnFirstInput, prepareNewCarForm } from './form';
+
+const GARAGE_SLUG = "lewagon-is-awesome";
+
+fetchAndDisplayCars(GARAGE_SLUG);
+prepareNewCarForm(GARAGE_SLUG);
